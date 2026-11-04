@@ -8,7 +8,8 @@ from memory import MemoryManager
 # ==========================================
 # 1. НАСТРОЙКИ ДЛЯ ИИ (ИТЧИКА/ПЕППЕР)
 # ==========================================
-OPENROUTER_API_KEY = ("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")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "твой_ключ_сюда")
+
 MODEL = "deepseek/deepseek-chat"
 MAX_TOKENS = 200
 TEMPERATURE = 0.8
